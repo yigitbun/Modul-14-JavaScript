@@ -19,11 +19,15 @@ console.log(books)
 // using square bracket notation
 books['book5'] = 'Sommer';
 // remove an book from the books object
-console.log(books)
+delete books.book5;
 // log the third book
+console.log(books['book3'])
+console.log(books['book5']) // deleted, should give undefined!
 
 // iterate over the books and log every single one
-
+for (book in books){
+  console.log(book)
+}
 /**
  * ARRAYS
  */
