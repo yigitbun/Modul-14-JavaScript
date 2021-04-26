@@ -14,10 +14,12 @@ for (const [key, value] of Object.entries(books)) {
 
 // add a new book to the books object
 // using dot notation
+books.book4='Frühling'
+console.log(books)
 // using square bracket notation
-
+books['book5'] = 'Sommer';
 // remove an book from the books object
-
+console.log(books)
 // log the third book
 
 // iterate over the books and log every single one
