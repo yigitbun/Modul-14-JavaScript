@@ -11,20 +11,20 @@ var x = "10";
 var x = '10';
 
 // add six to three
-// var add = three + six;
+// let add = three + six;
 // subtract six from three
-// var sub = three - six;
+// let sub = three - six;
 // multiply three times six
-// var mult = three * six;
+// let mult = three * six;
 
 // divide three by six
-// var div = three / six;
+// let div = three / six;
 
 // modulo six by three
-// var modu = six % three;
+// let modu = six % three;
 
 // log results
-// console.log(add);
+// console.log(add + '6');
 // console.log(sub);
 // console.log(mult, div, modu);
 
@@ -37,13 +37,15 @@ var x = '10';
 // when the result is equal to 21, subtract 4
 // else add 4
 // and then returns the result
-function ygt(para1, para2) {
-    if (!isNaN(para1) && !isNaN(para2)){
-        var result = para1/para2;
+
+
+function mathFunction(paramOne, paramTwo) {
+    if (!isNaN(paramOne) && !isNaN(paramTwo)){
+        var result = paramOne/paramTwo;
         // console.log(divide);
         var result = result + 3;
         // console.log(add);
-        var result = result * para2;
+        var result = result * paramTwo;
         if (result == 21){
             return result - 4;
         }else{
@@ -55,5 +57,30 @@ function ygt(para1, para2) {
     }
 }
 
+// function mathFunction(paramOne, paramTwo){
+//     if (isNaN(paramOne)) {
+//         console.error('Parameter 1 ist keine Zahl');
+//     } 
+
+//     if (isNaN(paramTwo)) {
+//         console.error('Parameter 2 ist keine Zahl');
+//     }
+
+//     let result = paramOne / paramTwo;
+
+//     result +=3;
+
+//     result *= paramTwo;
+
+//     if (result == 21) {
+//         result -= 4;
+//     }else{
+//         result += 4;
+//     }
+//     console.log(result)
+// }
+
+
+
 // log the result of the function
-console.log(ygt(10,2))
+console.log(mathFunction(3,1));
