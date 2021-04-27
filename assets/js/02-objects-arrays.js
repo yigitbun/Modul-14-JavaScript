@@ -28,6 +28,8 @@ console.log(books['book5']) // deleted, should give undefined!
 for (book in books){
   console.log(book)
 }
+console.log('---------------------');
+
 /**
  * ARRAYS
  */
@@ -39,9 +41,13 @@ let movies = [
 ];
 
 // add a new movie to the array
-
+movies.push("New Movie")
 // remove the movie „Call me by your name“ from the movies object
-
+movies.splice(2,1)
 // log the first movie
-
+console.log(movies[0])
+console.log('---------------------');
 // iterate over the movies and log every single one 
+for (const movie of movies){
+  console.log(movie)
+}
