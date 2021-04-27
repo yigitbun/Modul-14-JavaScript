@@ -8,27 +8,29 @@ let books = {
 };
 
 
-for (const [key, value] of Object.entries(books)) {
-  console.log(key, value);
-}
+// for (const [key, value] of Object.entries(books)) {
+//   console.log(key, value);
+// }
 
 // add a new book to the books object
 // using dot notation
 books.book4='Frühling'
-console.log(books)
+// console.log(books)
 // using square bracket notation
 books['book5'] = 'Sommer';
 // remove an book from the books object
 delete books.book5;
 // log the third book
-console.log(books['book3'])
-console.log(books['book5']) // deleted, should give undefined!
+// console.log(books['book3'])
+// console.log(books['book5']) // deleted, should give undefined!
+// console.log('---------------------');
+
 
 // iterate over the books and log every single one
-for (book in books){
-  console.log(book)
-}
-console.log('---------------------');
+// for (key in books){
+//   console.log(books[key])
+// }
+// console.log('---------------------');
 
 /**
  * ARRAYS
@@ -41,13 +43,17 @@ let movies = [
 ];
 
 // add a new movie to the array
-movies.push("New Movie")
+// movies.push("New Movie")
 // remove the movie „Call me by your name“ from the movies object
-movies.splice(2,1)
+// movies.splice(2,1)
 // log the first movie
-console.log(movies[0])
+// console.log(movies[0])
 console.log('---------------------');
 // iterate over the movies and log every single one 
-for (const movie of movies){
-  console.log(movie)
-}
+// for (movie in movies){
+//   console.log(movie, movies[movie])
+// }
+
+movies.forEach((value) => {
+  console.log(value);
+});
