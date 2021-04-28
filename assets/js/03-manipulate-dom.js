@@ -2,9 +2,12 @@
 // #headline = id="headline"
 // .headline = class="headline"
 
+var text = document.getElementById("headline").innerHTML;
+console.log(text)
+
 // change the text from the headline to:
 // „Cool, sie ist offen! :)“
-
+document.getElementById("headlibne").innerHTML = "Cool, sie ist offen! :)";
 // set value of the input element #input to:
 // „Hier steht Text“
 
