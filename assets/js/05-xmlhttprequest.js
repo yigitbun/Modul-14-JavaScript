@@ -8,18 +8,32 @@
 //   event.preventDefault();
 // })
 
-const xhr = new XMLHttpRequest();
+// const xhr = new XMLHttpRequest();
 
-xhr.onload = function () {
-    const serverResponse = document.getElementById("output");
-    serverResponse.innerHTML = this.responseText;
-};
+// xhr.onload = function () {
+//     const serverResponse = document.getElementById("output");
+//     serverResponse.innerHTML = this.responseText;
+// };
 
-xhr.open("POST", "dom.php");
-xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xhr.send("name=philip&message=how's it going")
+// xhr.open("POST", "dom.php");
+// xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+// xhr.send("name=philip&message=how's it going")
 
+fetch('https://openlibrary.org/books/OL7353617M.json')
+    .then((response) => {
+        return response.json();
+    })
+    .then((data1) => {
+        console.log("================================")
+        console.log("fetched--->", data1);
+        console.log("fetched--->", data1.title);
+        console.log("fetched--->", data1.first_sentence.value);
+        console.log("fetched--->", data1.isbn_13[0]);
+        console.log("================================")
 
+    });
+
+    
 // console.log(request);
 
 // get data from public api https://openlibrary.org/books/OL7353617M.json
